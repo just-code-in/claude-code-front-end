@@ -1,16 +1,8 @@
 {
-  "version": 2,
-  "name": "matrix-terminal-chatbot",
-  "builds": [
+  "rewrites": [
     {
-      "src": "index.html",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/index.html"
+      "source": "/(.*)",
+      "destination": "/index.html"
     }
   ],
   "headers": [
@@ -39,8 +31,5 @@
         }
       ]
     }
-  ],
-  "env": {
-    "VITE_WEBHOOK_URL": "@webhook_url"
-  }
+  ]
 }
