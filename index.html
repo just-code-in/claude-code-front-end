@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matrix Terminal - AI Assistant</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="matrix-bg"></div>
+
+    <div class="terminal-container">
+        <div class="terminal-header">
+            <div class="terminal-title">MATRIX TERMINAL v2.1.0</div>
+            <div class="connection-status">
+                <div id="connection-indicator" class="connection-indicator offline">
+                    <span class="connection-dot"></span>
+                    <span class="connection-text">OFFLINE</span>
+                </div>
+            </div>
+            <div class="terminal-controls">
+                <span class="control minimize">_</span>
+                <span class="control maximize">□</span>
+                <span class="control close">×</span>
+            </div>
+        </div>
+
+        <div class="terminal-content">
+            <div class="boot-sequence">
+                <div class="boot-line">INITIALIZING MATRIX INTERFACE...</div>
+                <div class="boot-line">CONNECTING TO AI SYSTEMS...</div>
+                <div class="boot-line">CONNECTION ESTABLISHED</div>
+                <div class="boot-line">WELCOME TO THE MATRIX</div>
+                <div class="boot-line">Type 'help' for available commands</div>
+                <div class="boot-line">_</div>
+            </div>
+
+            <div id="chat-messages" class="chat-messages"></div>
+
+            <div class="input-line">
+                <span class="prompt">root@matrix:~$ </span>
+                <input type="text" id="chat-input" class="chat-input" placeholder="Enter your message..." autocomplete="off">
+                <span class="cursor">█</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="scan-lines"></div>
+
+    <script src="js/config.js"></script>
+    <script src="js/matrix-bg.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
