@@ -16,7 +16,7 @@ A retro Matrix-themed terminal interface for AI chatbots with n8n webhook integr
 
 ## 🚀 Live Demo
 
-Visit the live Matrix Terminal: [Your Vercel URL]
+Visit the live Matrix Terminal: https://matrix-terminal-chatbot.vercel.app
 
 ## 🛠️ Technology Stack
 
