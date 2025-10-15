@@ -7,8 +7,7 @@ const MatrixConfig = {
     // n8n Webhook Configuration
     webhook: {
         url: (typeof process !== 'undefined' && process.env?.VITE_WEBHOOK_URL) ||
-             (typeof window !== 'undefined' && window.ENV?.VITE_WEBHOOK_URL) ||
-             'https://YOUR_BACKEND_INSTANCE.com/webhook/UI_claude_code',
+             (typeof window !== 'undefined' && window.ENV?.VITE_WEBHOOK_URL),
         timeout: 30000, // 30 seconds
         retryAttempts: 3,
         retryDelay: 2000, // 2 seconds
